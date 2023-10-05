@@ -1,0 +1,435 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Merriweather', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+
+header {
+    display: flex;
+    padding: .6rem 3vw;
+    background-color: rgba(134, 192, 172, 0.63);
+    align-items: center;
+    font-weight: 400;
+}
+
+header div {
+    padding-left: 2.5vw;
+}
+
+header div h1 {
+    font-size: 1.7rem;
+    color: rgb(15, 133, 206);
+}
+
+header div p {
+    font-size: 1.1rem;
+    color: rgb(105, 96, 203);
+}
+
+nav {
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+}
+
+nav li {
+    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    list-style-type: none;
+    border-bottom: 1px solid black;
+}
+
+nav a {
+    text-decoration: none;
+    color: #000;
+    font-size: 1.1rem;
+    font-weight: 600;
+}
+
+nav ul li.current_page {
+    background:linear-gradient(rgb(108, 170, 170), rgb(68, 119, 119));
+}
+
+nav ul li.current_page a {
+    color: white;
+}
+
+nav ul li a:hover {
+    color: rgb(17, 0, 255);
+    font-style: italic;
+}
+
+main {
+    padding: 2vw;
+}
+
+main .heroImage {
+    width: 100%;
+    margin: 0;
+}
+
+main .heroImage img {
+    width: 100%;
+    height: auto;
+    margin: 0;
+}
+
+main .seoulImg {
+    float: right;
+    width: 30%;
+    margin: 0 0 0 2vw;
+}
+
+main .seoulImg img {
+    width: 100%;
+    height: auto;
+}
+
+main .seoulImg figcaption {
+    text-align: center;
+    font-weight: 600;
+}
+
+
+
+main h2 {
+    padding-bottom: 1rem;
+    color: rgb(15, 133, 206);
+    font-weight: 600;
+}
+
+main .agencyInfo {
+    padding: 2vw;
+}
+
+main .agencyInfo p {
+    color: black;
+    font-size: 1.2rem;
+}
+
+main {
+    max-width: 1024px;
+    margin: 0 auto;
+}
+
+main .galleryZip {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.cities {
+    font-weight: 600;
+}
+
+.destDescription {
+    padding-bottom: .6rem;
+    padding-left: 1.5vw;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+main .galleryZip .gallery {
+    margin-bottom: 1rem;
+    border: 3px solid rgba(134, 192, 172, 0.63);
+}
+
+main .galleryZip .gallery figcaption {
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: .3rem;
+}
+
+.videoDescription {
+    padding-bottom: .6rem;
+    padding-left: 1.5vw;
+    font-weight: 300;
+    font-size: 1.2rem;
+}
+
+.videoCity {
+    padding: .4rem 0 .2rem 1.5vw;
+    color: rgb(105, 96, 203);
+    font-size: 1.3rem;
+}
+
+iframe {
+    margin-bottom: 1rem;
+}
+
+.galleryZip figure:hover {
+    box-shadow: 0px 0px 10px rgb(105, 96, 203);
+}
+
+.packageDescription {
+    font-size: 1.2rem;
+    padding-bottom: .6rem;
+    padding-left: 1.5vw;
+}
+
+iframe {
+    border: none;
+}
+
+.package {
+    display: flex;
+    flex-wrap: wrap;
+    border: 3px solid rgba(134, 192, 172, 0.63);
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+}
+
+.packagePhoto {
+    flex-basis: 100%;
+    text-align: center;
+    padding-top: .5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.packagePhoto figure figcaption{
+    text-align: center;
+    font-weight: 600;
+    padding-bottom: .3rem;
+}
+
+.packagePhoto h1 {
+    text-align: center;
+}
+
+.packageInfo {
+    padding-left: 2vw;
+    padding-top: .2rem;
+}
+
+.packageInfo h2 {
+    color: rgb(105, 96, 203);
+    padding-top: .2rem;
+    padding-bottom: .2rem;
+}
+
+.packageInfo p {
+    font-size: 1.2rem;
+    padding: 0 1vw .6rem 1.5vw;
+}
+
+.packageInfo .costP {
+    border: 0;
+}
+
+.packageInfo span {
+    color: #070e90;
+}
+
+.packageInfo p a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.packageInfo p a:hover {
+    color: #5f83bd;
+    text-decoration: underline;
+}
+
+.package img {
+    width: 90%;
+    height: auto;
+}
+
+.package img:hover {
+    box-shadow: 0px 0px 10px rgb(105, 96, 203);
+}
+
+fieldset {
+    padding-left: 1rem;
+    margin-bottom: .5rem;
+    border: 2px solid rgba(134, 192, 172, 0.63);
+    border-radius: .5rem;
+}
+
+.contactForm label {
+    display: block;
+}
+
+#touristInfo label{
+    margin-bottom: .5rem;
+}
+
+#citiesTogo label {
+    margin-bottom: .4rem;
+}
+
+#packageSelect select {
+    margin: .3rem 0 .5rem 0;
+}
+
+.contactForm label input[type="text"], input[type="tel"], input[type="email"], select, textarea {
+    display: block;
+}
+
+.contactForm [type="text"], [type="tel"], [type="email"], .contactForm select, .contactForm textarea {
+    border: 1px solid rgb(108, 170, 170);
+    padding: .3rem;
+    width: 250px;
+    border-radius: .3rem;
+    font-family: 'Merriweather', serif;
+    font-family: 'Nunito Sans', sans-serif;
+    font-weight: 300;
+}
+
+.contactForm input:required {
+    border-left: 6px solid #5f83bd;
+}
+
+.contactForm input:required:valid {
+    border: 1.3px solid #e606ff;
+}
+    
+#textareaSubmit {
+    padding-left: .5vw;
+}
+
+#textareaSubmit textarea {
+    height: 6rem;
+    border-radius: .5rem;
+}
+
+#textareaSubmit input[type="submit"] {
+    background:linear-gradient(#5f83bd, #3c5782);
+    border: none;
+    padding: .8rem 2rem;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    margin: .7rem 0 0 .5vw;
+}
+
+.contactForm :required {
+    background-color: rgba(100, 100, 100, 0.1);
+}
+
+#thanksMain p {
+    font-size: 1.2rem;
+    padding-left: 1.5vw;
+}
+
+footer {
+   background-color: rgba(134, 192, 172, 0.63);
+   padding-top: 1rem;
+   padding-bottom: 1rem;
+   text-align: center;
+   font-size: 1.2rem;
+   color: rgb(15, 133, 206);
+   font-weight: 600;
+}
+ 
+/* start media query (middle size) */
+@media only screen and (min-width: 33rem) {
+    
+    header div h1 {
+        font-size: 2rem;
+    }
+
+    header div p {
+        font-size: 1.3rem;
+    }
+
+    main .galleryZip .gallery {
+        margin-left: .3rem;
+        margin-right: .3rem;
+    }
+
+    .videoCity {
+        font-size: 1.4rem;
+    }
+    
+    nav {
+        padding: 0;
+        margin: 0;
+        padding-left: 2vw;
+        padding-right: 2vw;
+        background-color: rgb(108, 170, 170);
+    }
+
+    nav ul {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    nav li {
+        flex-basis: 19%;       
+        margin: 0;
+        padding-top: .7rem;
+        padding-bottom: .7rem;
+        border: none;
+    }
+
+    nav a {
+        text-decoration: none;
+        color: #000;
+        font-size: 1rem;
+    }
+
+    nav ul li.current_page {
+        background:linear-gradient(#5f83bd, #3c5782);
+    }
+    
+    nav ul li.current_page a {
+        color: white;
+    }
+
+    nav ul li a:hover {
+        color: rgb(255, 255, 255);
+        font-style: italic;
+    }
+} /* end media query (middle size) */
+
+
+/* This one is only for package.html */
+@media only screen and (min-width: 45rem) {
+    
+    .packagePhoto {
+        flex-basis: 50%;
+    }
+
+    .packageInfo {
+        flex-basis: 50%;
+    }
+
+}
+    
+
+/* start media query (large size) */
+@media only screen and (min-width: 60rem) {
+    
+    header div h1 {
+        font-size: 2.4rem;
+    }
+
+    header div p {
+        font-size: 1.6rem;
+    }
+
+    .videoCity {
+        font-size: 1.7rem;
+    }
+
+    nav li {
+        padding-top: .6rem;
+        padding-bottom: .6rem;
+    }
+
+    nav a {
+        font-size: 1.2rem;
+    }
+} /* end media query (large size) */
+

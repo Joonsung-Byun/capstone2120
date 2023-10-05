@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="description" content="Tour Agency">
+    <meta name="author" content="Joonsung Byun">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Capstone Activity</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@400;700&family=Nunito+Sans:wght@300;600&display=swap" rel="stylesheet">
+    <link rel="icon" type="images/x-icon" href="images/favicon.ico">
+    <link rel="stylesheet" href="index.css/home.css">
+</head>
+    <body id="homeBody">
+
+    <!-- start header here-->
+    <header>
+        <img src="images/logo-real.png" alt="logo" width="80" height="80">
+        <div>
+            <h1>Joonsung's Tour</h1>
+            <p>Make your trip valuable</p>
+        </div>
+    </header>
+
+    <!-- start nav here-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="destination.html">Destinations</a></li>
+            <li><a href="video.html">Videos</a></li>
+            <li><a href="package.html">Packages</a></li>
+            <li class="current_page"><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <!-- start main here-->
+    <main>
+        <h2>Contact Us</h2>
+        
+        <form action="thanks.html" class="contactForm" method="get"> <!--Form starts-->
+            <fieldset id="touristInfo"> <!--Tourist Information start-->
+                <legend>Tourist Information</legend>
+                    <label>First Name*
+                        <input type="text" name="fname" required>
+                    </label>
+                    <label>Last Name*
+                        <input type="text" name="lname" required>
+                    </label>
+                    <label>Call Number*
+                        <input type="tel" name="Cnumber" required placeholder="123-456-7890">
+                    </label>
+                    <label>Email Address*
+                        <input type="email" name="emailAdd" required placeholder="asd@gmail.com">
+                    </label>
+            </fieldset> <!--Tourist Information end-->
+
+            <fieldset id="citiesTogo"> <!--Cities to go start-->
+                <legend>Cities to go</legend>
+                    <label>
+                        <input type="radio" name="cityToGo" value="seoul"> Seoul
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="busan"> Busan
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="jeju"> Jeju
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="gyeongju"> Gyeongju
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="gangneung"> Gangneung
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="incheon"> Incheon
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="pohang"> Pohang
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="yeosu"> Yeosu
+                    </label>
+                    
+                    <label>
+                        <input type="radio" name="cityToGo" value="suwon"> Suwon
+                    </label>
+            </fieldset> <!--Cities to go end-->
+
+            <fieldset id="packageSelect">
+                <legend>Package</legend>
+                    <label> Please select prefer package
+                        <select name="Packages">
+                            <option value="none">Please select</option>
+                            <option value="seoulPackage">Seoul Package</option>
+                            <option value="busanPackage">Busan Package</option>
+                            <option value="suwonPackage">Suwon Package</option>
+                            <option value="noPackage">No Package Tour</option>
+                        </select>
+                        
+                    </label>
+            </fieldset>
+            
+            <div id="textareaSubmit">
+                <label>Comments
+                    <textarea name="comments"></textarea>
+                </label>
+                <input type="submit" value="Submit Your Response">
+            </div>
+        </form>    
+    </main>
+    
+    <footer>
+        <p>&copy; Joonsung Byun &bull; DGM2120 </p>
+    </footer>
+</body>
+</html>

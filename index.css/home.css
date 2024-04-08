@@ -13,7 +13,7 @@ body {
 header {
     display: flex;
     padding: .6rem 3vw;
-    background-color: rgba(134, 192, 172, 0.63);
+    background-color: rgba(200, 215, 246, 0.63);
     align-items: center;
     font-weight: 400;
 }
@@ -22,15 +22,8 @@ header div {
     padding-left: 2.5vw;
 }
 
-header div h1 {
-    font-size: 1.7rem;
-    color: rgb(15, 133, 206);
-}
 
-header div p {
-    font-size: 1.1rem;
-    color: rgb(105, 96, 203);
-}
+
 
 nav {
     padding-top: .5rem;
@@ -44,7 +37,6 @@ nav li {
     padding-top: .5rem;
     padding-bottom: .5rem;
     list-style-type: none;
-    border-bottom: 1px solid black;
 }
 
 nav a {
@@ -55,16 +47,19 @@ nav a {
 }
 
 nav ul li.current_page {
-    background:linear-gradient(rgb(108, 170, 170), rgb(68, 119, 119));
+    border-bottom: 1px solid black;
+    background-color: aliceblue;
 }
 
-nav ul li.current_page a {
-    color: white;
+nav ul li:hover {
+    /* border-bottom: 1px solid rgb(0, 0, 0); */
 }
+
+
 
 nav ul li a:hover {
     color: rgb(17, 0, 255);
-    font-style: italic;
+
 }
 
 main {
@@ -328,7 +323,6 @@ footer {
    padding-bottom: 1rem;
    text-align: center;
    font-size: 1.2rem;
-   color: rgb(15, 133, 206);
    font-weight: 600;
 }
  
@@ -336,7 +330,7 @@ footer {
 @media only screen and (min-width: 33rem) {
     
     header div h1 {
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 
     header div p {
@@ -357,39 +351,37 @@ footer {
         margin: 0;
         padding-left: 2vw;
         padding-right: 2vw;
-        background-color: rgb(108, 170, 170);
+        background-color: rgba(200, 215, 246, 0.63);
     }
 
     nav ul {
         display: flex;
-        justify-content: space-around;
+        justify-content: flex-start;
     }
 
-    nav li {
-        flex-basis: 19%;       
+    nav li {      
+        flex-basis: 10%;
         margin: 0;
-        padding-top: .7rem;
-        padding-bottom: .7rem;
-        border: none;
     }
 
     nav a {
         text-decoration: none;
         color: #000;
-        font-size: 1rem;
+        font-size: .8rem;
     }
 
     nav ul li.current_page {
-        background:linear-gradient(#5f83bd, #3c5782);
+        border-bottom: 1px solid black;
+        background-color: inherit;
     }
+
     
     nav ul li.current_page a {
-        color: white;
+        color: #5f83bd;
     }
 
     nav ul li a:hover {
-        color: rgb(255, 255, 255);
-        font-style: italic;
+
     }
 } /* end media query (middle size) */
 
@@ -410,10 +402,7 @@ footer {
 
 /* start media query (large size) */
 @media only screen and (min-width: 60rem) {
-    
-    header div h1 {
-        font-size: 2.4rem;
-    }
+
 
     header div p {
         font-size: 1.6rem;
@@ -428,8 +417,5 @@ footer {
         padding-bottom: .6rem;
     }
 
-    nav a {
-        font-size: 1.2rem;
-    }
 } /* end media query (large size) */
 
